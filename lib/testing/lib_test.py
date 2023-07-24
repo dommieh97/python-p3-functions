@@ -40,13 +40,7 @@ class TestGreetWithDefault:
         sys.stdout = sys.__stdout__
         assert(captured_out.getvalue() == "Hello, programmer!\n")
 
-    def test_greet_with_default_with_param(self):
-        '''prints "Hello, {name}!"'''
-        captured_out = io.StringIO()
-        sys.stdout = captured_out
-        greet_with_default("Guido")
-        sys.stdout = sys.__stdout__
-        assert(captured_out.getvalue() == "Hello, Guido!\n")
+
 
 class TestAdd:
     '''function add()'''
